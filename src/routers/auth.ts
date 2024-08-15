@@ -63,7 +63,7 @@ router.get("/facebook", passport.authenticate("facebook", { scope: ["email"] }))
 // Google OAuth callback route
 router.get("/facebook/callback", passport.authenticate("facebook", { failureRedirect: "/" }), (req, res) => {
   // Successful authentication, redirect home.
-  res.redirect("/homepage");
+  res.redirect("www.google.com");
 });
 
 export default router;
